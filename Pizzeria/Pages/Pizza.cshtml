@@ -1,0 +1,49 @@
+﻿@page
+@model Pizzeria.Pages.PizzaModel
+@{
+}
+
+<div class="text-center bg-white">
+    <div class="mainText">
+        
+        <div class="container">
+            <div class="row border">
+                <div class="col-6 mb-5 mt-5">
+                    <div class="w-100 row makeYourOwnDiv">
+                        <div class="col">
+                            <img src="~/images/Pizzas/Create.png" />
+                        </div>
+                        <div class="col align-items-center">
+                            <div class="align-middle makeYourOwnText">
+                                <h1 style="text-align:left;">Create your own pizza!</h1>
+                                <p style="text-align: left;">Make your own pizza with our PizzaBuilder!</p>
+                                <a class="btn btn-warning text-design" style="float: left; font-weight: 600;" asp-area="" asp-page="Forms/CustomPizza">Try Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 mb-5 mt-5">
+                    <div style="background-color: grey;" class="text-white makeYourOwnDiv">
+                        <h1 class="display-4 text-capitalize ">
+                            Our great selection of Pizzas!
+                        </h1>
+                        <h4>Choose one, or try our Pizza Builder! Then order and it's all done!</h4>
+                        <h4>No need to give any of your details!</h4>
+                        <h4>We already know everything!</h4>
+                        <p class="smallText">Only one pizza per order!</p>
+                    </div>
+                </div>
+
+                @foreach (var pizza in Model.fakePizzaDB) {
+                    var imagePath = "~/images/Pizzas/" + (pizza.ImageTitle + ".png");
+                    <div class="col-4 mb-5 ">
+                    <img src="@imagePath" class="w-100" asp-append-version="true" />
+                        <a class="btn btn-warning mt-1 text-design" style="font-weight: 600;" asp-area="" asp-page="Checkout/Checkout"
+                    asp-route-ImageTitle="@pizza.ImageTitle" asp-route-PizzaPrice="@pizza.FinalPrice">Get the pizza!</a>
+                    <br />
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

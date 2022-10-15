@@ -1,0 +1,48 @@
+html {
+  font-size: 14px;
+}
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+.backg {
+    background-image: url("/images/pizzatexture.png");
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+img {
+    border-radius: 25%;
+    width: 400px;
+}
+.text-design {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-text-stroke-width: 0.12px;
+    -webkit-text-stroke-color: white;
+
+    font-weight: 700;
+}
+.smallText {
+    text-align: right;
+    color: gray;
+    font-style: italic;
+}
+.makeYourOwnDiv {
+    background-color: grey;
+    margin: 0;
+}
+.makeYourOwnText {
+    margin: 100px 0 20px 0;
+    color: white;
+}

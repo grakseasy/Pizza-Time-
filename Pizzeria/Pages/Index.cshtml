@@ -1,0 +1,23 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center ">
+    <div class="border border-4 border-warning shadow text-black bg-white pt-3 pb-3" style="">
+    <h1 class="text-design">Welcome to Grande Pizzas!</h1>
+    <div class="text-design">Hungry for some quality pizza? Look no further!</div>
+    </div>
+    <div class="mt-5 row">
+        <div class="col">
+    <img class="shadow-lg mainImage" src="~/images/PizzaTime.jpg" />
+        </div>
+        <div class="bg-white col border border-4 border-warning shadow text-black" style="border-radius: 12%;">
+            <h3 style="margin-top: 100px;" class="text-design">
+            We offer a wide variety of pizzas to choose from. <br /> And if you feel like it, you could also order a custom pizza!
+            </h3>
+            <a class="btn btn-dark border border-2 border-warning text-white" asp-area="" asp-page="/Pizza" style="font-weight:600;">Choose a pizza!</a>
+        </div>
+    </div>
+</div>
