@@ -1,4 +1,6 @@
-Grande Pizzeria
+• Developed a pizza web shop, which lets the user choose a pizza from the menu, or create their own pizza with the pizza
+builder.
 
-A pizzeria .NET Core web app, made with Razor pages, which lets the user choose a pizza, or make their own pizza, and order it.
-The pizza details are then stored in MSSQL Server and listed out in the Orders section.
+• Used Razor Pages to make the web shop page-based, and Microsoft SQL Server for saving the pizza orders.
+
+• Utilized the Bootstrap framework to make the web applications design and overall layout
